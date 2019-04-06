@@ -2,8 +2,78 @@
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+@include media-breakpoint-only(xs) { 
+	#header {
+		h1 {
+			font-size:16px;
+			margin-top:10px;
+		}
+	}
+}
+@include media-breakpoint-only(sm) { 
+
+	#header {
+		h1 {
+			font-size:18px;
+		}
+	}
+
+}
+@include media-breakpoint-only(md) { 
+	#header {
+		h1 {
+			font-size:24px;
+		}
+	}
+}
+@include media-breakpoint-only(lg) { 
+
+	#header {
+		h1 {
+			font-size:30px;
+		}
+	}
+
+}
+@include media-breakpoint-only(xl) { 
+
+	#header {
+		h1 {
+			font-size:35px;
+		}
+	}
 
 
-#header {
+}
+
+
+
+body {
 	background-color:#235940;
 }
+#header {
+	padding:10px 0px 10px 0px;
+	h1 {
+		color:#fdb813;
+	}
+	.navbar {
+		border-bottom:3px solid #fdb813;
+	}
+	.navbar-brand {
+		
+		.elac-logo {
+			max-width:100px;
+			margin-left:10px;
+		}
+		.nav-text {
+			margin:0px 0px 0px 0px;
+			color:#fdb813;
+		}
+	}
+	
+	
+}
+main {
+	margin-top:30px;
+}
+

@@ -7590,5 +7590,37 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-#header {
+@media (max-width: 575.98px) {
+  #header h1 {
+    font-size: 16px;
+    margin-top: 10px; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  #header h1 {
+    font-size: 18px; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #header h1 {
+    font-size: 24px; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  #header h1 {
+    font-size: 30px; } }
+@media (min-width: 1200px) {
+  #header h1 {
+    font-size: 35px; } }
+body {
   background-color: #235940; }
+
+#header {
+  padding: 10px 0px 10px 0px; }
+  #header h1 {
+    color: #fdb813; }
+  #header .navbar {
+    border-bottom: 3px solid #fdb813; }
+  #header .navbar-brand .elac-logo {
+    max-width: 100px;
+    margin-left: 10px; }
+  #header .navbar-brand .nav-text {
+    margin: 0px 0px 0px 0px;
+    color: #fdb813; }
+
+main {
+  margin-top: 30px; }
