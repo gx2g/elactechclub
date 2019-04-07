@@ -2,6 +2,7 @@
 // Option A: Include all of Bootstrap
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 @include media-breakpoint-only(xs) { 
 	#header {
 		h1 {
@@ -73,7 +74,24 @@ body {
 	
 	
 }
-main {
-	margin-top:30px;
+.bd-carousel {
+	margin-top:80px;
+}
+
+.unique-row [class*=col-]{
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+	background-color: rgba(86, 61, 124, 0.15);
+	border: 1px solid rgba(86, 61, 124, 0.2);
+	.sub-title {
+		color:#fdb813;
+	}
+}
+
+#myFooter {
+	.footer-copyright {
+		padding:20px 0px;
+		color:#999;
+	}	
 }
 
